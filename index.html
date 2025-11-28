@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PORTFOLIO</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/020a23cc78.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="font-[poppins]" style="border: 1px solid red;">
+  <!-- NAVBAR -->
+
+  <nav class="bg-white sticky top-0 z-50 py-3 shadow-md dark:bg-white">
+    <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
+      <a href="#" class="flex items-center">
+        <img src="./images/ChatGPT_Image_Nov_24__2025__03_58_22_PM-removebg-preview.png" class="h-9 mr-1 sm:h-12 "
+          alt="My Logo">
+        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-[#00B4D9]">MeetTOA</span>
+      </a>
+      <div class="flex items-center lg:order-2">
+
+        <!-- <a href="https://themesberg.com/product/tailwind-css/landing-page"
+                class="text-white bg-[#00B4D9] hover:bg-[#00B4D9]focus:ring-4 focus:ring-[#00B4D9] font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-[#00B4D9] dark:hover:bg-[#00B4D9] focus:outline-none dark:focus:ring-[#00B4D9]">Get Started</a> -->
+        <button data-collapse-toggle="mobile-menu-2" type="button"
+          class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="mobile-menu-2" aria-expanded="true">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="items-center justify-between w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+        <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-15 lg:mt-0">
+          <li>
+            <a href="#"
+              class="block py-2 pl-3 pr-4 text-[#00B4D9] bg-[#131b2f] rounded lg:bg-transparent lg:text-[#00B4D9] lg:p-0 dark:text-[#00B4D9]"
+              aria-current="page">HOME</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 pl-3 pr-4 text-black-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-black-700 lg:p-0 dark:text-black-400 lg:dark:hover:text-[#00B4D9] dark:hover:bg-gray-700 dark:hover:text-[#00B4D9] lg:dark:hover:bg-transparent dark:border-gray-700">ABOUT</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 pl-3 pr-4 text-black-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-black-700 lg:p-0 dark:text-black-400 lg:dark:hover:text-[#00B4D9] dark:hover:bg-gray-700 dark:hover:text-[#00B4D9] lg:dark:hover:bg-transparent dark:border-gray-700">SERVICES</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 pl-3 pr-4 text-black-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-black-700 lg:p-0 dark:text-black-400 lg:dark:hover:text-[#00B4D9] dark:hover:bg-gray-700 dark:hover:text-[#00B4D9] lg:dark:hover:bg-transparent dark:border-gray-700">RESUME</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 pl-3 pr-4 text-black-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-black-700 lg:p-0 dark:text-black-400 lg:dark:hover:text-[#00B4D9] dark:hover:bg-gray-700 dark:hover:text-[#00B4D9] lg:dark:hover:bg-transparent dark:border-gray-700">WORK</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 pl-3 pr-4 text-black-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-black-700 lg:p-0 dark:text-black-400 lg:dark:hover:text-[#00B4D9] dark:hover:bg-gray-700 dark:hover:text-[#00B4D9] lg:dark:hover:bg-transparent dark:border-gray-700">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="relative flex items-center justify-center min-h-screen px-6 text-center">
+    <!-- Radial Gradient Background -->
+    <div class="absolute inset-0 bg-gradient-to-br from-[#00E5FF] to-[#0061FF]">
+    </div>
+
+    <div class="relative z-10 max-w-4xl">
+      <div class="text-3xl leading-8">Hi, This is</div>
+      <h1 class="text-4xl md:text-5xl font-bold text-[#131b2f]">
+        TEMILOLUWA OLUWALAYOMI ADEKOYA
+      </h1>
+      <p class="mt-4 text-lg text-[#131b0a]">
+        APPLICATION SECURITY ENGINEER
+      </p>
+      <a href="#"
+        class="mt-6 inline-block px-6 py-3 text-[#00B4D9] bg-[#131b2f] rounded-lg shadow-lg hover:bg-[#131b2a] transition">
+        GET A FREE QUOTE
+      </a>
+    </div>
+  </section>
+
+
+  <!-- ABOUT ME -->
+  <section
+    class="min-h-screen bg-white text-white py-12 px-12 flex flex-col md:flex-row items-center justify-between gap-10">
+    <!-- Left Side: Image -->
+    <div class="w-full md:w-5/12 flex justify-center h-full md:justify-end">
+      <img src="./images/DSC_2620-removebg-preview.png" alt="About Me"
+        class="w-72 h-110 md:w-80 lg:w-96 grayscale-100 object-cover rounded-lg shadow-lg bg-[#00B4D9]" />
+    </div>
+
+    <!-- Right Side: Text Content -->
+    <div class="w-full md:w-7/12 text-center md:text-left relative">
+      <!-- Main Heading -->
+      <h2 class="text-2xl text-[#00B4D9] md:text-3xl font-bold leading-tight mb-4">
+        A Driven <br> Application Security Engineer
+      </h2>
+
+      <!-- Description -->
+      <p class="text-[#131b2f] mb-6 text-sm md:text-base leading-relaxed max-w-2xl mx-auto md:mx-0">
+        I’m Temiloluwa Oluwalayomi, an Application Security Engineer specializing in securing modern web and cloud
+        applications through threat modeling, secure code review, and automation-driven security testing. I enjoy
+        bridging the gap between development and security, helping teams build resilient systems without slowing down
+        innovation.”
+      </p>
+
+
+      <!-- Contact Information ------->
+      <section class="pb-2 mt-4 mb-0 first:mt-0">
+        <!-- To keep in the same column --->
+        <section class="break-inside-avoid">
+          <!-- <section class="pb-4 mb-2 break-inside-avoid">
+            <ul class="pr-7 list-inside">
+              <li
+                class="mt-1 leading-normal text-gray-600 transition duration-100 ease-in hover:text-gray-700 text-md">
+                <a href="#" class="group">
+                  <span class="mr-2 text-lg font-semibold text-[#131b2f] leading-snugish">
+                    Name:
+                  </span>
+                  Temiloluwa Oluwalayomi Adekoya
+                </a>
+              </li>
+              <li class="mt-1 leading-normal text-gray-600 transition duration-100 ease-in hover:text-gray-700 text-md">
+                <a href="https://github.com/LayoCyber" class="group">
+                  <span class="mr-5 text-lg font-semibold text-[#131b2f] leading-snugish">
+                    Experience:
+                  </span>
+                  1 year
+                </a>
+              </li>
+              <li class="mt-1 leading-normal text-gray-600 transition duration-100 ease-in hover:text-gray-700 text-md">
+                <a href="mailto:adekoyatemiloluwa02@gmail.com" class="group">
+                  <span class="mr-8 text-lg font-semibold text-[#131b2f] leading-snugish">
+                    Email:
+                  </span>
+                  adekoyatemiloluwa02@gmail.com
+                </a>
+              </li>
+              <li class="mt-1 leading-normal text-gray-600 transition duration-100 ease-in hover:text-gray-700 text-md">
+                <a href="tel:+2347032727014">
+                  <span class="mr-5 text-lg font-semibold text-[#131b2f] leading-snugish">
+                    Phone:
+                  </span>
+                  +2347032727014
+                </a>
+              </li>
+            </ul>
+          </section> -->
+
+
+
+
+
+
+
+          <div class="flex flex-col sm:flex-row gap-2 md:gap-6 items-center justify-between font-serif">
+          <!-- 1 -->
+          <ul class="w-full text-gray-600 dark:text-gray-700">
+            <li class="py-2"><span class="font-bold">Name :</span> Temiloluwa Oluwalayomi Adekoya</li>
+            <li class="py-2"><span class="font-bold">Experience:</span>
+              1 year</li>
+            <li class="py-2"><span class="font-bold">Email :</span> adekoyatemiloluwa02@gmail.com</li>
+            <li class="py-2"><span class="font-bold">Phone :</span>
+              +2347032727014</li>
+          </ul>
+        </div>
+        </section>
+      </section>
+
+      <!-- Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+        <a href="#" class="bg-[#00B4D9] text-white font-[14px] py-2 px-4 rounded-sm hover:bg-tertiary/80 text-center"><i
+            class="fa-solid fa-link" style="color: #ffffff;"></i>
+          DOWNLOAD RESUME
+        </a>
+        <a href="#"
+          class="bg-[#131b2f] border border-tertiary text-white font-[14px] py-2 px-7 rounded-sm hover:bg-tertiary/10 text-center"><i
+            class="fa-regular fa-message" style="color: #ffffff;"></i>
+          CONTACT ME
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT I DO -->
+
+  <section class="p-6 sm:p-10 bg-[#f0f0f0]">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-12 transition-transform duration-500 transform hover:scale-105">
+        What I Do
+      </h2>
+      <!-- Flex container for cards: stacks vertically by default, becomes row on medium screens -->
+      <div class="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0">
+
+        <div class="bg-white rounded-xl p-6 sm:p-8 shadow-sm flex flex-col w-full md:w-1/3">
+          <div class="text-center mb-4">
+            <i class="fa-solid fa-shield text-4xl text-[#00B4D9]"></i>
+          </div>
+          <div class="text-center mb-3">
+            <h3 class="text-2xl font-semibold text-gray-900 mb-2">APPLICATION SECURITY</h3>
+            <p class="text-base text-gray-600">Securing software by performing threat modeling, code analysis, and
+              security testing across the SDLC to prevent exploitation.</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl p-6 sm:p-8 shadow-sm flex flex-col w-full md:w-1/3">
+          <div class="text-center mb-4">
+            <i class="fa-solid fa-desktop text-4xl text-[#00B4D9]"></i>
+          </div>
+          <div class="text-center mb-3">
+            <h3 class="text-2xl font-semibold text-gray-900 mb-2">WEB DEVELOPMENT </h3>
+            <p class="text-base text-gray-600">Designing and building responsive, user-focused websites and applications
+              that function smoothly across modern platforms.</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl p-6 sm:p-8 shadow-sm flex flex-col w-full md:w-1/3">
+          <div class="text-center mb-4">
+            <i class="fa-solid fa-pen text-4xl text-[#00B4D9]"></i>
+          </div>
+          <div class="text-center mb-3">
+            <h3 class="text-2xl font-semibold text-gray-900 mb-2">CREATIVE WRITING</h3>
+            <p class="text-base text-gray-600">Transforming thoughts into narrative, crafting meaning through voice,
+              emotion, and imagination.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- RESUME -->
+
+  <div class="container max-w-5xl mx-auto p-4 my-8">
+    <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+      <!-- Main Content -->
+      <div class="p-6 md:p-10">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          <!-- Left Column -->
+          <div class="col-span-2">
+            <!-- Professional Experience -->
+            <div class="mb-8">
+              <h2 class="text-xl font-bold text-gray-800 mb-2 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-[#00B4D9]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                PROFESSIONAL EXPERIENCE
+              </h2>
+              <div class="w-16 h-1 bg-[#00B4D9] mb-4"></div>
+
+
+
+
+
+
+              <!-- Experience 1 -->
+              <!-- <div class="mb-6 relative pl-6 border-l-2 border-[#00B4D9]">
+                <div class="absolute -left-1.5 top-1.5 w-3 h-3 rounded-full bg-[#00B4D9]"></div>
+                <h3 class="text-lg font-bold text-gray-800">Application Security Engineering Learner</h3>
+                <p class="text-[#00B4D9] font-medium text-sm mb-2">September 2025 - Present</p>
+              </div> -->
+
+              <!-- Experience 2 -->
+              <div class="relative pl-6 border-l-2 border-[#00B4D9]">
+                <div class="absolute -left-1.5 top-1.5 w-3 h-3 rounded-full bg-[#00B4D9]"></div>
+                <h3 class="text-lg font-bold text-gray-800">Application Security Engineering Learner</h3>
+                <p class="text-[#00B4D9] font-medium text-sm mb-2">September 2025 - Present</p>
+                <p class="font-medium text-sm text-gray-700 mt-2">Key Contributions:</p>
+                <ul class="list-disc pl-5 text-sm text-gray-600 space-y-1">
+                  <li>Designed and implemented responsive UI components using Tailwind CSS for cross-device
+                    compatibility</li>
+                  <li>Collaborated with designers and backend developers to create intuitive user experiences</li>
+                  <li>Focused on performance optimization, accessibility, and best coding practices</li>
+                </ul>
+                <!-- <p class="font-medium text-sm text-gray-700 mt-2">Key Skills:</p>
+                <p class="text-sm text-gray-600">React.js | Remix | TypeScript | JavaScript | Tailwind CSS | API
+                  Integrations | UI/UX Development | Performance Optimization</p> -->
+              </div>
+            </div>
+
+            <!-- Projects -->
+            <div>
+              <h2 class="text-xl font-bold text-gray-800 mb-2 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-[#00B4D9]" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                </svg>
+                Certifications
+              </h2>
+              <div class="w-16 h-1 bg-[#00B4D9] mb-4"></div>
+
+              <!-- Certification 1 -->
+              <div class="mb-4 p-4 border-l-4 border-[#00B4D9] bg-[#00B4D9] rounded-r">
+                <h3 class="text-lg font-semibold text-gray-800">Google Cybersecurity Professional Certificate</h3>
+              </div>
+
+              <!-- Certification 2 -->
+              <div class="mb-4 p-4 border-l-4 border-[#00B4D9] bg-[#00B4D9] rounded-r">
+                <h3 class="text-lg font-semibold text-gray-800">Cybersecurity: Women Techsters Bootcamp</h3>
+              </div>
+
+              <!-- Certification 3 -->
+              <div class="p-4 border-l-4 border-[#00B4D9] bg-[#00B4D9] rounded-r">
+                <h3 class="text-lg font-semibold text-gray-800">Content and Copywriting Writing: FutureClan Bootcamp</h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div>
+            <!-- Skills -->
+            <div class="mb-8">
+              <h2 class="text-xl font-bold text-gray-800 mb-2 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-[#00B4D9]" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+                Skills
+              </h2>
+              <div class="w-16 h-1 bg-[#00B4D9] mb-4"></div>
+
+              <!-- Skill Items -->
+              <div class="space-y-3">
+                <div class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-[#00B4D9] transition-colors">
+                  <div class="w-8 h-8 bg-[#00B4D9] text-white rounded-lg flex items-center justify-center mr-3">
+                    <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5">
+                      <path fill="currentColor"
+                        d="M7.50006 2.5C6.47409 2.5 5.59203 2.77691 4.89966 3.37037C4.21227 3.95956 3.76259 4.81729 3.51314 5.88638C3.45869 6.1197 3.57742 6.35885 3.79619 6.45654C4.01496 6.55423 4.27228 6.483 4.40967 6.28672C4.7263 5.8344 5.04244 5.56261 5.3462 5.42313C5.64038 5.28805 5.95748 5.26068 6.32069 5.35797C6.68723 5.45615 6.97097 5.74369 7.41643 6.22816L7.43082 6.24382C7.76661 6.60905 8.17623 7.0546 8.73649 7.40028C9.31785 7.75898 10.0413 7.99999 11.0001 7.99999C12.026 7.99999 12.9081 7.72307 13.6005 7.12962C14.2878 6.54043 14.7375 5.6827 14.987 4.61361C15.0414 4.38029 14.9227 4.14114 14.7039 4.04345C14.4852 3.94576 14.2278 4.01698 14.0904 4.21326C13.7738 4.66559 13.4577 4.93737 13.1539 5.07686C12.8597 5.21194 12.5426 5.23931 12.1794 5.14202C11.8129 5.04384 11.5291 4.7563 11.0837 4.27182L11.0693 4.25616C10.7335 3.89093 10.3239 3.44538 9.76362 3.09971C9.18227 2.74101 8.45883 2.5 7.50006 2.5Z"
+                        fill="currentColor" />
+                      <path fill="currentColor"
+                        d="M4.00006 6.99999C2.97409 6.99999 2.09203 7.2769 1.39966 7.87036C0.712271 8.45955 0.262592 9.31727 0.0131365 10.3864C-0.0413057 10.6197 0.0774162 10.8588 0.296186 10.9565C0.514956 11.0542 0.772276 10.983 0.909673 10.7867C1.2263 10.3344 1.54244 10.0626 1.8462 9.92312C2.14038 9.78804 2.45747 9.76067 2.82069 9.85796C3.18723 9.95614 3.47097 10.2437 3.91643 10.7282L3.93082 10.7438C4.2666 11.109 4.67624 11.5546 5.23649 11.9003C5.81785 12.259 6.54128 12.5 7.50006 12.5C8.52602 12.5 9.40808 12.2231 10.1005 11.6296C10.7878 11.0404 11.2375 10.1827 11.487 9.1136C11.5414 8.88027 11.4227 8.64113 11.2039 8.54343C10.9852 8.44574 10.7278 8.51697 10.5904 8.71325C10.2738 9.16558 9.95768 9.43736 9.65391 9.57684C9.35974 9.71192 9.04264 9.7393 8.67942 9.64201C8.31289 9.54383 8.02915 9.25628 7.58369 8.77181L7.56929 8.75615C7.23351 8.39092 6.82388 7.94537 6.26362 7.59969C5.68227 7.241 4.95883 6.99999 4.00006 6.99999Z"
+                        fill="currentColor" />
+                    </svg>
+                  </div>
+                  <span class="font-medium">HTML</span>
+                </div>
+
+                <div class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-[#00B4D9] transition-colors">
+                  <div class="w-8 h-8 bg-[#00B4D9] text-white rounded-lg flex items-center justify-center mr-3">
+                    <svg viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5">
+                      <path fill="currentColor"
+                        d="M17.6,9.48l1.84-3.18c0.16-0.31,0.04-0.69-0.26-0.85c-0.29-0.15-0.65-0.06-0.83,0.22l-1.88,3.24 c-2.86-1.21-6.08-1.21-8.94,0L5.65,5.67c-0.19-0.29-0.58-0.38-0.87-0.2C4.5,5.65,4.41,6.01,4.56,6.3L6.4,9.48 C3.3,11.25,1.28,14.44,1,18h22C22.72,14.44,20.7,11.25,17.6,9.48z M7,15.25c-0.69,0-1.25-0.56-1.25-1.25 c0-0.69,0.56-1.25,1.25-1.25S8.25,13.31,8.25,14C8.25,14.69,7.69,15.25,7,15.25z M17,15.25c-0.69,0-1.25-0.56-1.25-1.25 c0-0.69,0.56-1.25,1.25-1.25s1.25,0.56,1.25,1.25C18.25,14.69,17.69,15.25,17,15.25z">
+                      </path>
+                    </svg>
+                  </div>
+                  <span class="font-medium">Bootstrap</span>
+                </div>
+
+                <div class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-[#00B4D9] transition-colors">
+                  <div class="w-8 h-8 bg-[#00B4D9] text-white rounded-lg flex items-center justify-center mr-3">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5">
+                      <path fill="currentColor"
+                        d="M17 7.82959L18.6965 9.35641C20.239 10.7447 21.0103 11.4389 21.0103 12.3296C21.0103 13.2203 20.239 13.9145 18.6965 15.3028L17 16.8296M13.9868 5L10.0132 19.8297M7.00005 7.82959L5.30358 9.35641C3.76102 10.7447 2.98975 11.4389 2.98975 12.3296C2.98975 13.2203 3.76102 13.9145 5.30358 15.3028L7.00005 16.8296">
+                      </path>
+                    </svg>
+                  </div>
+                  <span class="font-medium">Tailwind CSS</span>
+                </div>
+
+                <div class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-[#00B4D9] transition-colors">
+                  <div class="w-8 h-8 bg-[#00B4D9] text-white rounded-lg flex items-center justify-center mr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 515 515" class="w-5 h-5">
+                      <path fill="currentColor"
+                        d="M193.918,208.369c-4.729-10.456-6.849-22.652-3.236-33.731c3.612-11.327,11.703-20.413,19.794-28.878 c22.525-22.531,50.285-39.085,72.316-61.986c12.197-12.573,22.278-27.634,25.762-44.937c2.864-12.695,1.496-25.764-1.117-38.337 c11.7,13.319,15.559,32.363,12.197,49.541c-3.608,19.292-14.316,36.344-26.886,51.031c-10.081,11.827-21.659,22.282-33.731,31.993 c-14.065,11.327-27.88,23.524-36.716,39.457c-7.472,12.943-9.215,28.876-4.11,42.942c8.341,24.146,27.756,42.071,38.338,64.848 c-11.703-10.332-23.152-21.036-33.86-32.361C211.471,236.001,200.889,223.307,193.918,208.369z">
+                      </path>
+                    </svg>
+                  </div>
+                  <span class="font-medium">JavaScript</span>
+                </div>
+
+                <div class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-[#00B4D9] transition-colors">
+                  <div class="w-8 h-8 bg-[#00B4D9] text-white rounded-lg flex items-center justify-center mr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-5 h-5">
+                      <path fill="currentColor"
+                        d="M71.5 142.3c.6-5.9-1.7-11.8-6.1-15.8L20.3 72.1V64h140.2l108.4 237.7L364.2 64h133.7v8.1l-38.6 37c-3.3 2.5-5 6.7-4.3 10.8v272c-.7 4.1 1 8.3 4.3 10.8l37.7 37v8.1H307.3v-8.1l39.1-37.9c3.8-3.8 3.8-5 3.8-10.8V171.2L241.5 447.1h-14.7L100.4 171.2v184.9c-1.1 7.8 1.5 15.6 7 21.2l50.8 61.6v8.1h-144v-8L65 377.3c5.4-5.6 7.9-13.5 6.5-21.2V142.3z" />
+                    </svg>
+                  </div>
+                  <span class="font-medium">CSS</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Education -->
+            <div>
+              <h2 class="text-xl font-bold text-gray-800 mb-2 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-[#00B4D9]" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                  <path
+                    d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                </svg>
+                Education
+              </h2>
+              <div class="w-16 h-1 bg-[#00B4D9] mb-4"></div>
+
+              <!-- Education Items -->
+              <div class="space-y-4">
+                <!-- Education 1 -->
+                <div class="relative pl-6 border-l-2 border-[#00B4D9]">
+                  <div class="absolute -left-1.5 top-1.5 w-3 h-3 rounded-full bg-[#00B4D9]"></div>
+                  <div class="bg-gray-50 p-3 rounded">
+                    <p class="text-xs font-semibold text-[#00B4D9]">September 2025 - Present</p>
+                    <h3 class="font-semibold">SQI College of ICT, Ogbomoso.</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!-- REMARKABLE WORKS -->
+  <section class="bg-[#f0f0f0]">
+    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+        <div>
+          <p
+            class="inline-block px-3 py-px mb-4 text-3xl font-semibold tracking-wider text-[#252525] rounded-full sm:text-2xs">
+            My Remarkable Works
+          </p>
+        </div>
+      </div>
+      <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div>
+          <div
+            class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+            <img class="object-cover grayscale-100 w-full h-56 md:h-64 xl:h-80"
+              src="./images/bookdiverse.png"
+              alt="Person" />
+            <div
+              class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-[#00B4D9] bg-opacity-75 opacity-0 hover:opacity-75">
+              <div class="flex items-center justify-center space-x-3">
+                <a href="/"
+                  class="text-white transition-colors duration-300 hover:text-teal-accent-400 bg-white opacity-100 p-2 rounded-md">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <g fill="none" stroke="#00B4D9" stroke-width="1">
+                      <path
+                        d="M12 5c-5.444 0-8.469 4.234-9.544 6.116c-.221.386-.331.58-.32.868c.013.288.143.476.402.852C3.818 14.694 7.294 19 12 19s8.182-4.306 9.462-6.164c.26-.376.39-.564.401-.852s-.098-.482-.319-.868C20.47 9.234 17.444 5 12 5Z" />
+                      <circle cx="12" cy="12" r="3" />
+                    </g>
+                  </svg>
+                </a>
+                <a href="/"
+                  class="text-white transition-colors duration-300 hover:text-teal-accent-400 bg-white p-2 rounded-md">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="none" stroke="#00B4D9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                      d="m15.988 13l3.902-3.902c1.437-1.437 1.485-3.718.107-5.095c-1.377-1.378-3.658-1.33-5.095.107L11 8.012m2 7.95l-3.892 3.88c-1.432 1.43-3.64 1.615-5.082.107c-1.442-1.507-1.326-3.639.107-5.068L8.025 11M9 15l6-6" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+            <img class="object-cover grayscale-100 w-full h-56 md:h-64 xl:h-80"
+              src="./images/WebDev.png"
+              alt="Person" />
+            <div
+              class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-[#00B4D9] bg-opacity-75 opacity-0 hover:opacity-75">
+              <div class="flex items-center justify-center space-x-3">
+                <a href="/"
+                  class="text-white transition-colors duration-300 hover:text-teal-accent-400 bg-white opacity-100 p-2 rounded-md">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <g fill="none" stroke="#00B4D9" stroke-width="1">
+                      <path
+                        d="M12 5c-5.444 0-8.469 4.234-9.544 6.116c-.221.386-.331.58-.32.868c.013.288.143.476.402.852C3.818 14.694 7.294 19 12 19s8.182-4.306 9.462-6.164c.26-.376.39-.564.401-.852s-.098-.482-.319-.868C20.47 9.234 17.444 5 12 5Z" />
+                      <circle cx="12" cy="12" r="3" />
+                    </g>
+                  </svg>
+                </a>
+                <a href="/"
+                  class="text-white transition-colors duration-300 hover:text-teal-accent-400 bg-white p-2 rounded-md">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="none" stroke="#00B4D9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                      d="m15.988 13l3.902-3.902c1.437-1.437 1.485-3.718.107-5.095c-1.377-1.378-3.658-1.33-5.095.107L11 8.012m2 7.95l-3.892 3.88c-1.432 1.43-3.64 1.615-5.082.107c-1.442-1.507-1.326-3.639.107-5.068L8.025 11M9 15l6-6" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+            <img class="object-cover grayscale-100 w-full h-56 md:h-64 xl:h-80"
+              src="./images/printivo.png"
+              alt="Person" />
+            <div
+              class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-[#00B4D9] bg-opacity-75 opacity-0 hover:opacity-75">
+              <div class="flex items-center justify-center space-x-3">
+                <a href="/"
+                  class="text-white transition-colors duration-300 hover:text-teal-accent-400 bg-white opacity-100 p-2 rounded-md">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <g fill="none" stroke="#00B4D9" stroke-width="1">
+                      <path
+                        d="M12 5c-5.444 0-8.469 4.234-9.544 6.116c-.221.386-.331.58-.32.868c.013.288.143.476.402.852C3.818 14.694 7.294 19 12 19s8.182-4.306 9.462-6.164c.26-.376.39-.564.401-.852s-.098-.482-.319-.868C20.47 9.234 17.444 5 12 5Z" />
+                      <circle cx="12" cy="12" r="3" />
+                    </g>
+                  </svg>
+                </a>
+                <a href="/"
+                  class="text-white transition-colors duration-300 hover:text-teal-accent-400 bg-white p-2 rounded-md">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="none" stroke="#00B4D9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                      d="m15.988 13l3.902-3.902c1.437-1.437 1.485-3.718.107-5.095c-1.377-1.378-3.658-1.33-5.095.107L11 8.012m2 7.95l-3.892 3.88c-1.432 1.43-3.64 1.615-5.082.107c-1.442-1.507-1.326-3.639.107-5.068L8.025 11M9 15l6-6" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+            <img class="object-cover grayscale-100 w-full h-56 md:h-64 xl:h-80"
+              src="./images/Edozzier.png"
+              alt="Person" />
+            <div
+              class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-[#00B4D9] bg-opacity-75 opacity-0 hover:opacity-75">
+              <div class="flex items-center justify-center space-x-3">
+                <a href="/"
+                  class="text-white transition-colors duration-300 hover:text-teal-accent-400 bg-white opacity-100 p-2 rounded-md">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <g fill="none" stroke="#00B4D9" stroke-width="1">
+                      <path
+                        d="M12 5c-5.444 0-8.469 4.234-9.544 6.116c-.221.386-.331.58-.32.868c.013.288.143.476.402.852C3.818 14.694 7.294 19 12 19s8.182-4.306 9.462-6.164c.26-.376.39-.564.401-.852s-.098-.482-.319-.868C20.47 9.234 17.444 5 12 5Z" />
+                      <circle cx="12" cy="12" r="3" />
+                    </g>
+                  </svg>
+                </a>
+                <a href="/"
+                  class="text-white transition-colors duration-300 hover:text-teal-accent-400 bg-white p-2 rounded-md">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="none" stroke="#00B4D9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                      d="m15.988 13l3.902-3.902c1.437-1.437 1.485-3.718.107-5.095c-1.377-1.378-3.658-1.33-5.095.107L11 8.012m2 7.95l-3.892 3.88c-1.432 1.43-3.64 1.615-5.082.107c-1.442-1.507-1.326-3.639.107-5.068L8.025 11M9 15l6-6" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+            <img class="object-cover grayscale-100 w-full h-56 md:h-64 xl:h-80"
+              src="./images/DisplayLayout.png"
+              alt="Person" />
+            <div
+              class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-[#00B4D9] bg-opacity-75 opacity-0 hover:opacity-75">
+              <div class="flex items-center justify-center space-x-3">
+                <a href="/"
+                  class="text-white transition-colors duration-300 hover:text-teal-accent-400 bg-white opacity-100 p-2 rounded-md">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <g fill="none" stroke="#00B4D9" stroke-width="1">
+                      <path
+                        d="M12 5c-5.444 0-8.469 4.234-9.544 6.116c-.221.386-.331.58-.32.868c.013.288.143.476.402.852C3.818 14.694 7.294 19 12 19s8.182-4.306 9.462-6.164c.26-.376.39-.564.401-.852s-.098-.482-.319-.868C20.47 9.234 17.444 5 12 5Z" />
+                      <circle cx="12" cy="12" r="3" />
+                    </g>
+                  </svg>
+                </a>
+                <a href="/"
+                  class="text-white transition-colors duration-300 hover:text-teal-accent-400 bg-white p-2 rounded-md">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="none" stroke="#00B4D9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                      d="m15.988 13l3.902-3.902c1.437-1.437 1.485-3.718.107-5.095c-1.377-1.378-3.658-1.33-5.095.107L11 8.012m2 7.95l-3.892 3.88c-1.432 1.43-3.64 1.615-5.082.107c-1.442-1.507-1.326-3.639.107-5.068L8.025 11M9 15l6-6" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+            <img class="object-cover grayscale-100 w-full h-56 md:h-64 xl:h-80"
+              src="./images/Thoughtbot.png"
+              alt="Person" />
+            <div
+              class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-[#00B4D9] bg-opacity-75 opacity-0 hover:opacity-75">
+              <div class="flex items-center justify-center space-x-3">
+                <a href="/"
+                  class="text-white transition-colors duration-300 hover:text-teal-accent-400 bg-white opacity-100 p-2 rounded-md">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <g fill="none" stroke="#00B4D9" stroke-width="1">
+                      <path
+                        d="M12 5c-5.444 0-8.469 4.234-9.544 6.116c-.221.386-.331.58-.32.868c.013.288.143.476.402.852C3.818 14.694 7.294 19 12 19s8.182-4.306 9.462-6.164c.26-.376.39-.564.401-.852s-.098-.482-.319-.868C20.47 9.234 17.444 5 12 5Z" />
+                      <circle cx="12" cy="12" r="3" />
+                    </g>
+                  </svg>
+                </a>
+                <a href="/"
+                  class="text-white transition-colors duration-300 hover:text-teal-accent-400 bg-white p-2 rounded-md">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="none" stroke="#00B4D9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                      d="m15.988 13l3.902-3.902c1.437-1.437 1.485-3.718.107-5.095c-1.377-1.378-3.658-1.33-5.095.107L11 8.012m2 7.95l-3.892 3.88c-1.432 1.43-3.64 1.615-5.082.107c-1.442-1.507-1.326-3.639.107-5.068L8.025 11M9 15l6-6" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+            <img class="object-cover grayscale-100 w-full h-56 md:h-64 xl:h-80"
+              src="./images/solarsystem.png"
+              alt="Person" />
+            <div
+              class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-[#00B4D9] bg-opacity-75 opacity-0 hover:opacity-75">
+              <div class="flex items-center justify-center space-x-3">
+                <a href="/"
+                  class="text-white transition-colors duration-300 hover:text-teal-accent-400 bg-white opacity-100 p-2 rounded-md">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <g fill="none" stroke="#00B4D9" stroke-width="1">
+                      <path
+                        d="M12 5c-5.444 0-8.469 4.234-9.544 6.116c-.221.386-.331.58-.32.868c.013.288.143.476.402.852C3.818 14.694 7.294 19 12 19s8.182-4.306 9.462-6.164c.26-.376.39-.564.401-.852s-.098-.482-.319-.868C20.47 9.234 17.444 5 12 5Z" />
+                      <circle cx="12" cy="12" r="3" />
+                    </g>
+                  </svg>
+                </a>
+                <a href="/"
+                  class="text-white transition-colors duration-300 hover:text-teal-accent-400 bg-white p-2 rounded-md">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="none" stroke="#00B4D9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                      d="m15.988 13l3.902-3.902c1.437-1.437 1.485-3.718.107-5.095c-1.377-1.378-3.658-1.33-5.095.107L11 8.012m2 7.95l-3.892 3.88c-1.432 1.43-3.64 1.615-5.082.107c-1.442-1.507-1.326-3.639.107-5.068L8.025 11M9 15l6-6" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+            <img class="object-cover grayscale-100 w-full h-56 md:h-64 xl:h-80"
+              src="./images/wikipedia.png"
+              alt="Person" />
+            <div
+              class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-[#00B4D9] bg-opacity-75 opacity-0 hover:opacity-75">
+              <div class="flex items-center justify-center space-x-3">
+                <a href="/"
+                  class="text-white transition-colors duration-300 hover:text-teal-accent-400 bg-white opacity-100 p-2 rounded-md">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <g fill="none" stroke="#00B4D9" stroke-width="1">
+                      <path
+                        d="M12 5c-5.444 0-8.469 4.234-9.544 6.116c-.221.386-.331.58-.32.868c.013.288.143.476.402.852C3.818 14.694 7.294 19 12 19s8.182-4.306 9.462-6.164c.26-.376.39-.564.401-.852s-.098-.482-.319-.868C20.47 9.234 17.444 5 12 5Z" />
+                      <circle cx="12" cy="12" r="3" />
+                    </g>
+                  </svg>
+                </a>
+                <a href="/"
+                  class="text-white transition-colors duration-300 hover:text-teal-accent-400 bg-white p-2 rounded-md">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="none" stroke="#00B4D9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                      d="m15.988 13l3.902-3.902c1.437-1.437 1.485-3.718.107-5.095c-1.377-1.378-3.658-1.33-5.095.107L11 8.012m2 7.95l-3.892 3.88c-1.432 1.43-3.64 1.615-5.082.107c-1.442-1.507-1.326-3.639.107-5.068L8.025 11M9 15l6-6" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="text-[#00B4D9] bg-[#131b2f]">
+    <div class="container flex flex-col md:flex-row lg:max-w-5xl w-full px-5 py-12 md:py-24 mx-auto section"
+      id="contact-form">
+      <!-- RIGHT SIDE -->
+      <div class="md:w-2/4 w-full">
+        <h1 class="text-4xl text-[#00B4D9] sm:text-4xl font-bold title-font mb-4">CONTACT FORM</h1>
+        <form class="md:col-span-8 p-10">
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label class="block uppercase tracking-wide text-white text-xs font-bold mb-2" for="grid-first-name">
+                First Name
+              </label>
+              <input
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-[#00B4D9] rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                id="grid-first-name" type="text" placeholder="Jane">
+              <p class="text-[#00b4c2] text-xs italic">Please fill out this field.</p>
+            </div>
+            <div class="w-full md:w-1/2 px-3">
+              <label class="block uppercase tracking-wide text-white text-xs font-bold mb-2" for="grid-last-name">
+                Last Name
+              </label>
+              <input
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="grid-last-name" type="text" placeholder="Doe">
+            </div>
+          </div>
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full px-3">
+              <label class="block uppercase tracking-wide text-white text-xs font-bold mb-2" for="grid-password">
+                Email Address
+              </label>
+              <input
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="grid-email" type="email" placeholder="********@*****.**">
+            </div>
+          </div>
+
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full px-3">
+              <label class="block uppercase tracking-wide text-white text-xs font-bold mb-2" for="grid-password">
+                Your Message
+              </label>
+              <textarea rows="10"
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"></textarea>
+            </div>
+            <div class="w-full px-3">
+              <button
+                class="shadow bg-[#00B4D9] uppercase hover:bg-[#00b4c2] focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded"
+                type="submit">
+                Send Message
+              </button>
+            </div>
+
+          </div>
+
+        </form>
+      </div>
+
+
+      <!-- LEFT SIDE -->
+      <div class="md:w-2/4 w-full mt-10 md:mt-0 md:pl-20">
+        <h1 class="text-4xl text-[#00B4D9] sm:text-4xl font-bold title-font mb-4">CONTACT ADDRESS</h1>
+        <div class="border p-4">
+          <h2 class="text-3xl md:text-4xl font-bold leading-tight">
+            Have You Any Project? <br />
+            <span class="text-gray-300">Please Drop a Message</span>
+          </h2>
+          <p class="mt-4 text-gray-400">
+            Get in touch and let me know how I can help. Fill out the form and
+            I'll be in touch as soon as possible.
+          </p>
+
+          <div class="mt-6 space-y-4">
+            <div class="flex items-start space-x-4">
+              <span class="text-xl text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  viewBox="0 0 24 24">
+                  <path fill="#fff"
+                    d="M12 11.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7" />
+                </svg></span>
+              <div>
+                <p class="font-semibold">Address:</p>
+                <p class="text-gray-400">Ogbomoso, Nigeria.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+              <span class="text-xl text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  viewBox="0 0 24 24">
+                  <path fill="#fff"
+                    d="m19.23 15.26l-2.54-.29a1.99 1.99 0 0 0-1.64.57l-1.84 1.84a15.05 15.05 0 0 1-6.59-6.59l1.85-1.85c.43-.43.64-1.03.57-1.64l-.29-2.52a2 2 0 0 0-1.99-1.77H5.03c-1.13 0-2.07.94-2 2.07c.53 8.54 7.36 15.36 15.89 15.89c1.13.07 2.07-.87 2.07-2v-1.73c.01-1.01-.75-1.86-1.76-1.98" />
+                </svg></span>
+              <div>
+                <p class="font-semibold">Phone:</p>
+                <p class="text-gray-400">+2347032727014</p>
+                <p class="text-gray-400">+2348073423405</p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+              <span class="text-xl text-gray-400">✉️</span>
+              <div>
+                <p class="font-semibold">Email:</p>
+                <p class="text-gray-400 text-xs">adekoyatemiloluwa02@gmail.com</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Icons -->
+          <div class="mt-6 flex justify-center lg:justify-start gap-4">
+            <a href="#"
+              class="group relative inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#00B4D9] text-neutral-200 hover:w-32 transition-all overflow-hidden">
+              <span class="hidden group-hover:inline whitespace-nowrap mr-2">GitHub</span><svg
+                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256">
+                <path fill="#131b2f"
+                  d="M208.31 75.68A59.78 59.78 0 0 0 202.93 28a8 8 0 0 0-6.93-4a59.75 59.75 0 0 0-48 24h-24a59.75 59.75 0 0 0-48-24a8 8 0 0 0-6.93 4a59.78 59.78 0 0 0-5.38 47.68A58.14 58.14 0 0 0 56 104v8a56.06 56.06 0 0 0 48.44 55.47A39.8 39.8 0 0 0 96 192v8H72a24 24 0 0 1-24-24a40 40 0 0 0-40-40a8 8 0 0 0 0 16a24 24 0 0 1 24 24a40 40 0 0 0 40 40h24v16a8 8 0 0 0 16 0v-40a24 24 0 0 1 48 0v40a8 8 0 0 0 16 0v-40a39.8 39.8 0 0 0-8.44-24.53A56.06 56.06 0 0 0 216 112v-8a58.14 58.14 0 0 0-7.69-28.32M200 112a40 40 0 0 1-40 40h-48a40 40 0 0 1-40-40v-8a41.74 41.74 0 0 1 6.9-22.48a8 8 0 0 0 1.1-7.69a43.8 43.8 0 0 1 .79-33.58a43.88 43.88 0 0 1 32.32 20.06a8 8 0 0 0 6.71 3.69h32.35a8 8 0 0 0 6.74-3.69a43.87 43.87 0 0 1 32.32-20.06a43.8 43.8 0 0 1 .77 33.58a8.09 8.09 0 0 0 1 7.65a41.7 41.7 0 0 1 7 22.52Z" />
+              </svg>
+            </a>
+            <a href="#"
+              class="group relative inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#00B4D9] text-neutral-200 hover:w-36 transition-all overflow-hidden">
+              <span class="hidden group-hover:inline whitespace-nowrap mr-2">LinkedIn</span><svg
+                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="#131b2f"
+                  d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002M7 8.48H3V21h4zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91z" />
+              </svg>
+            </a>
+            <a href="#"
+              class="group relative inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#00B4D9] text-neutral-200 hover:w-36 transition-all overflow-hidden">
+              <span class="hidden group-hover:inline whitespace-nowrap mr-2">Facebook</span><svg
+                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="#131b2f"
+                  d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z" />
+              </svg>
+            </a>
+            <a href="#"
+              class="group relative inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#00B4D9] text-neutral-200 hover:w-36 transition-all overflow-hidden">
+              <span class="hidden group-hover:inline whitespace-nowrap mr-2">YouTube</span><svg
+                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <mask id="SVGsyA92bmM">
+                  <g fill="none" fill-opacity="0" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2">
+                    <path fill="#fff" stroke-dasharray="64" stroke-dashoffset="64"
+                      d="M12 5c9 0 9 0 9 7c0 7 0 7 -9 7c-9 0 -9 0 -9 -7c0 -7 0 -7 9 -7Z">
+                      <animate fill="freeze" attributeName="fill-opacity" begin="0.6s" dur="0.5s" values="0;1" />
+                      <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="64;0" />
+                    </path>
+                    <path fill="#000" stroke="none" d="M12 11L12 12L12 13z">
+                      <animate fill="freeze" attributeName="d" begin="1.1s" dur="0.2s"
+                        values="M12 11L12 12L12 13z;M10 8.5L16 12L10 15.5z" />
+                      <set fill="freeze" attributeName="fill-opacity" begin="1.1s" to="1" />
+                    </path>
+                  </g>
+                </mask>
+                <rect width="24" height="24" fill="#131b2f" mask="url(#SVGsyA92bmM)" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="w-full py-5 bg-[#f0f0f0">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto">
+        <div class="flex space-x-10 justify-center items-center mb-5">
+          <a href="#" class="block  text-[#00B4D9] transition-all duration-500 hover:text-[#00b4c2">
+            <svg class="w-[1.688rem] h-[1.688rem]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none">
+              <path
+                d="M11.3214 8.93666L16.4919 3.05566H15.2667L10.7772 8.16205L7.1914 3.05566H3.05566L8.47803 10.7774L3.05566 16.9446H4.28097L9.022 11.552L12.8088 16.9446H16.9446L11.3211 8.93666H11.3214ZM9.64322 10.8455L9.09382 10.0765L4.72246 3.95821H6.60445L10.1322 8.8959L10.6816 9.66481L15.2672 16.083H13.3852L9.64322 10.8458V10.8455Z"
+                fill="currentColor" />
+            </svg>
+          </a>
+          <a href="#" class="block  text-[#00B4D9] transition-all duration-500 hover:text-[#00b4c2 ">
+            <svg class="w-[1.688rem] h-[1.688rem] " viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.76556 14.8811C9.76556 12.3243 11.8389 10.2511 14.3972 10.2511C16.9555 10.2511 19.03 12.3243 19.03 14.8811C19.03 17.4379 16.9555 19.5111 14.3972 19.5111C11.8389 19.5111 9.76556 17.4379 9.76556 14.8811ZM7.26117 14.8811C7.26117 18.82 10.456 22.0129 14.3972 22.0129C18.3385 22.0129 21.5333 18.82 21.5333 14.8811C21.5333 10.9422 18.3385 7.7493 14.3972 7.7493C10.456 7.7493 7.26117 10.9422 7.26117 14.8811ZM20.1481 7.46652C20.148 7.79616 20.2457 8.11843 20.4288 8.39258C20.6119 8.66674 20.8723 8.88046 21.177 9.00673C21.4817 9.133 21.8169 9.16614 22.1405 9.10196C22.464 9.03778 22.7612 8.87916 22.9945 8.64617C23.2278 8.41318 23.3868 8.11627 23.4513 7.79299C23.5157 7.46972 23.4829 7.13459 23.3568 6.83C23.2307 6.5254 23.017 6.26502 22.7428 6.08178C22.4687 5.89853 22.1463 5.80065 21.8164 5.80052H21.8158C21.3737 5.80073 20.9497 5.9763 20.637 6.28867C20.3243 6.60104 20.1485 7.02467 20.1481 7.46652ZM8.78274 26.1863C7.42782 26.1246 6.69138 25.8991 6.20197 25.7085C5.55314 25.4561 5.0902 25.1554 4.60346 24.6696C4.11672 24.1839 3.81543 23.7216 3.56395 23.0732C3.37317 22.5843 3.14748 21.8481 3.08588 20.494C3.01851 19.03 3.00506 18.5902 3.00506 14.8812C3.00506 11.1722 3.01962 10.7336 3.08588 9.26841C3.14759 7.9143 3.37495 7.17952 3.56395 6.68919C3.81654 6.04074 4.11739 5.57808 4.60346 5.09163C5.08953 4.60519 5.55203 4.30408 6.20197 4.05274C6.69116 3.86208 7.42782 3.63652 8.78274 3.57497C10.2476 3.50763 10.6877 3.49419 14.3972 3.49419C18.1068 3.49419 18.5473 3.50874 20.0134 3.57497C21.3683 3.63663 22.1035 3.86385 22.5941 4.05274C23.243 4.30408 23.7059 4.60585 24.1926 5.09163C24.6794 5.57741 24.9796 6.04074 25.2322 6.68919C25.4229 7.17808 25.6486 7.9143 25.7102 9.26841C25.7776 10.7336 25.7911 11.1722 25.7911 14.8812C25.7911 18.5902 25.7776 19.0287 25.7102 20.494C25.6485 21.8481 25.4217 22.5841 25.2322 23.0732C24.9796 23.7216 24.6787 24.1843 24.1926 24.6696C23.7066 25.155 23.243 25.4561 22.5941 25.7085C22.105 25.8992 21.3683 26.1247 20.0134 26.1863C18.5485 26.2536 18.1084 26.2671 14.3972 26.2671C10.686 26.2671 10.2472 26.2536 8.78274 26.1863ZM8.66768 1.0763C7.18823 1.14363 6.17729 1.37808 5.29443 1.72141C4.3801 2.07597 3.60608 2.55163 2.83262 3.32341C2.05916 4.09519 1.58443 4.86997 1.22966 5.78374C0.88612 6.66663 0.651535 7.67641 0.584162 9.15497C0.515676 10.6359 0.5 11.1093 0.5 14.8811C0.5 18.6529 0.515676 19.1263 0.584162 20.6072C0.651535 22.0859 0.88612 23.0955 1.22966 23.9784C1.58443 24.8916 2.05927 25.6673 2.83262 26.4387C3.60597 27.2102 4.3801 27.6852 5.29443 28.0407C6.17896 28.3841 7.18823 28.6185 8.66768 28.6859C10.1502 28.7532 10.6232 28.77 14.3972 28.77C18.1713 28.77 18.645 28.7543 20.1268 28.6859C21.6063 28.6185 22.6166 28.3841 23.5 28.0407C24.4138 27.6852 25.1884 27.2105 25.9618 26.4387C26.7353 25.667 27.209 24.8916 27.5648 23.9784C27.9083 23.0955 28.144 22.0857 28.2103 20.6072C28.2777 19.1252 28.2933 18.6529 28.2933 14.8811C28.2933 11.1093 28.2777 10.6359 28.2103 9.15497C28.1429 7.6763 27.9083 6.66608 27.5648 5.78374C27.209 4.87052 26.7341 4.09641 25.9618 3.32341C25.1896 2.55041 24.4138 2.07597 23.5011 1.72141C22.6166 1.37808 21.6062 1.14252 20.1279 1.0763C18.6461 1.00897 18.1724 0.992188 14.3983 0.992188C10.6243 0.992188 10.1502 1.00785 8.66768 1.0763Z"
+                fill="currentColor" />
+            </svg>
+
+          </a>
+          <a href="#" class="block  text-[#00B4D9] transition-all duration-500 hover:text-[#00b4c2] ">
+            <svg class="w-[0.938rem] h-[1.625rem]" viewBox="0 0 15 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M13.7926 14.4697L14.5174 9.86889H10.0528V6.87836C10.0528 5.62033 10.6761 4.39105 12.6692 4.39105H14.7275V0.473179C13.5289 0.282204 12.3177 0.178886 11.1037 0.164062C7.42917 0.164062 5.0302 2.37101 5.0302 6.36077V9.86889H0.957031V14.4697H5.0302V25.5979H10.0528V14.4697H13.7926Z"
+                fill="currentColor" />
+            </svg>
+
+          </a>
+          <a href="#" class="block  text-[#00B4D9] transition-all duration-500 hover:text-[#00b4c2 ">
+            <svg class="w-[1.875rem] h-[1.375rem]" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M26.3106 1.27838C27.5782 1.62071 28.5745 2.61957 28.9113 3.88573C29.524 6.18356 29.524 10.9809 29.524 10.9809C29.524 10.9809 29.524 15.7782 28.9113 18.076C28.5698 19.3469 27.5735 20.3457 26.3106 20.6834C24.0186 21.2977 14.8226 21.2977 14.8226 21.2977C14.8226 21.2977 5.63122 21.2977 3.33456 20.6834C2.06695 20.3411 1.07063 19.3422 0.73385 18.076C0.121094 15.7782 0.121094 10.9809 0.121094 10.9809C0.121094 10.9809 0.121094 6.18356 0.73385 3.88573C1.07531 2.61488 2.07162 1.61602 3.33456 1.27838C5.63122 0.664062 14.8226 0.664062 14.8226 0.664062C14.8226 0.664062 24.0186 0.664062 26.3106 1.27838ZM19.5234 10.9809L11.885 15.403V6.55872L19.5234 10.9809Z"
+                fill="currentColor" />
+            </svg>
+
+          </a>
+        </div>
+        <span class="text-lg text-gray-500 text-center block">©<a href="https://pagedone.io/">TOA</a> 2025, All
+          Rights Reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+</body>
+
+</html>
